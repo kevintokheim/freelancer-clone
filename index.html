@@ -6,11 +6,15 @@
     <script src="lib/angular-ui-router.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Freelancer Clone</title>
   </head>
   <body>
     <div class="container">
-      <div ui-view></div>
+      <div ui-view="header"></div>
+      <div ui-view="navigation"></div>
+      <div ui-view="body"></div>
+      <div ui-view="footer"></div>
     </div>
   </body>
 </html>

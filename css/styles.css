@@ -1,0 +1,8 @@
+.navbar-brand {
+  padding-top: 0;
+}
+
+#logo-image {
+  max-width:100px;
+  margin-top: -7px;
+}
