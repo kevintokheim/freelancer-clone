@@ -6,3 +6,15 @@
   max-width:100px;
   margin-top: -7px;
 }
+
+.jumbotron {
+  margin-top: 5%;
+}
+
+.jumbotron #nasa {
+  float: left;
+}
+
+.jumbotron #satellite {
+  float: right;
+}

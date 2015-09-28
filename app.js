@@ -6,7 +6,13 @@ freelancerClone.config(function($stateProvider, $urlRouterProvider) {
     views: {
       'header': {
         templateUrl: "partials/header.html",
+      },
+      'navigation': {
+        templateUrl: "partials/navigation.html",
+      },
+      'body': {
+        templateUrl: "partials/body.html"
       }
     }
-  }); 
+  });
 });
