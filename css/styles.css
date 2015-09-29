@@ -30,6 +30,11 @@ ul {
   border-color: black;
 }
 
+#mobile-cti{
+  background-image: url("mobile-cti.jpg");
+  width: 254px;
+  height: 210px;
+}
 
 
 .blueDiv {
