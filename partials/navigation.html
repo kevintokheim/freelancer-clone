@@ -1,17 +1,34 @@
-<div class="navigation" ng-hide="hire || work" ng-show="navigation">
+<!-- <div class="navigation" ng-hide="hire || work" ng-show="navigation">
   <h1>Hire expert freelancers for your online job.</h1>
   <h3>Millions of small businesses use Freelancer.com to turn their ideas into reality. Need to get work done? Click 'Hire' to get started!</h3>
-  <button type="button" ng-click="hire = true" ui-sref="hire.html">Hire</button>
-  <button type="button" ng-click = "work = true" ui-sref="work.html">Work</button>
+  <button type="button" ng-click="hire = true && !navigation" ui-sref="hire.html">Hire</button>
+  <button type="button" ng-click = "work = true && !navigation" ui-sref="work.html">Work</button>
 </div>
 
 <div ng-show="hire && !work && !navigation">
   <h1>HIRE ME!</h1>
-  <button type="submit" ng-click="navigation = true">X</button>
+  <button type="button" ng-click="navigation = true">X</button>
 
 </div>
 
 <div ng-show="work && !hire && !navigation">
   <h1>work for me</h1>
-  <button type="submit" ng-click="navigation = true">X</button>
+  <button type="button" ng-click="navigation = true">X</button>
+</div> -->
+
+<div class="row">
+  <div ng-switch="view.name" class="navigation">
+    <div ng-switch-on="view.name">
+    <h1>Hire expert freelancers for your online job.</h1>
+    <h3>Millions of small businesses use Freelancer.com to turn their ideas into reality. Need to get work done? Click 'Hire' to get started!</h3>
+        <button ng-click = "view.name = hire">Hire</button>
+        <button ng-click = "view.name = work">Work</button>
+      <div ng-switch-when = "hire" ng-controller="HireCtrl">
+        <h1>WORK FOR ME</h1>
+      </div>
+      <div ng-switch-when = "work" ng-controller="WorkCtrl">
+        <h1>Hire Me</h1>
+      </div>
+    </div>
+  </div>
 </div>

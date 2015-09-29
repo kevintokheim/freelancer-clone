@@ -9,16 +9,18 @@ freelancerClone.config(function($stateProvider, $urlRouterProvider) {
       },
       'navigation': {
         templateUrl: "partials/navigation.html",
+        controller: "NavCtrl",
       },
       'body': {
         templateUrl: "partials/body.html",
       },
       'footer': {
-        templateUrl: "partials/footer.html"
+        templateUrl: "partials/footer.html",
       },
-      'hire': {
-        templateUrl: "partials/hire.html"
-      }
+      // 'hire': {
+      //   templateUrl: "partials/hire.html",
+      //   controller: "NavCtrl"
+      // },
     }
   });
 });
