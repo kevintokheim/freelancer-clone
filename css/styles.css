@@ -23,9 +23,9 @@ ul {
   list-style: none;
 }
 
-
-/*.hire-section #hire-buttons{
-  display: inline-block;
-  float: right;
-  vertical-align: middle;
-}*/
+#hire-buttons li {
+  margin: 1%;
+  border-width: 1%;
+  border-style: solid;
+  border-color: black;
+}
