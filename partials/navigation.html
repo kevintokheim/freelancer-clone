@@ -21,7 +21,7 @@
     <div ng-switch-on="view.name">
     <h1>Hire expert freelancers for your online job.</h1>
     <h3>Millions of small businesses use Freelancer.com to turn their ideas into reality. Need to get work done? Click 'Hire' to get started!</h3>
-        <button ng-click = "view.name = hire">Hire</button>
+        <button change-style = "btn-danger">Hire</button>
         <button ng-click = "view.name = work">Work</button>
       <div ng-switch-when = "hire" ng-controller="HireCtrl">
         <h1>WORK FOR ME</h1>

@@ -29,3 +29,10 @@ ul {
   border-style: solid;
   border-color: black;
 }
+
+.blueDiv {
+  background-color: blue;
+  opacity: 0.7;
+  border-color: blue;
+  border-width: 5%;
+}
