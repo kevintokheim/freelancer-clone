@@ -1,8 +1,11 @@
 freelancerClone.directive("changeStyle", function(){
 
   return function(scope, element, attrs){
-    element.bind("hover", function(){
-      element.toggleClass(attrs.changeStyle);
+    element.bind("mouseover", function(){
+      element.addClass(attrs.changeStyle);
+    });
+    element.bind("mouseleave", function(){
+      element.removeClass(attrs.changeStyle);
     });
   }
 
