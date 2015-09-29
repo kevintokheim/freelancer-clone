@@ -11,7 +11,10 @@ freelancerClone.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: "partials/navigation.html",
       },
       'body': {
-        templateUrl: "partials/body.html"
+        templateUrl: "partials/body.html",
+      },
+      'footer': {
+        templateUrl: "partials/footer.html"
       }
     }
   });
